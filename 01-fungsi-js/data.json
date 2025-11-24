@@ -1,0 +1,7 @@
+{
+  "status": "ok",
+  "data": {
+    "judul": "Data Sukses Dimuat via AJAX",
+    "pesan": "Ini adalah pesan dari file JSON lokal."
+  }
+}

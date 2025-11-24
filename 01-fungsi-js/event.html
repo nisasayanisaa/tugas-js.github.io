@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas JavaScript Event</title>
+    <style>
+        /* CSS untuk memvisualisasikan Event Propagation */
+        #div-parent { padding: 50px; background-color: lightblue; border: 5px solid blue; }
+        #div-child { padding: 50px; background-color: lightcoral; border: 5px solid red; }
+        #btn-target { padding: 10px; background-color: lightgreen; }
+    </style>
+</head>
+<body>
+    <h1>Event Handling dan Propagation</h1>
+    
+    <h2>1. Mencegah Aksi Default (preventDefault)</h2>
+    <a id="link-google" href="https://www.google.com" target="_blank">Klik untuk ke Google (Dicegah!)</a>
+    <p>Cek console setelah klik.</p>
+
+    <hr>
+
+    <h2>2. Event Propagation (Bubbling & Capturing)</h2>
+    <div id="div-parent">
+        Parent
+        <div id="div-child">
+            Child
+            <button id="btn-target">Target (Element yang diklik)</button>
+        </div>
+    </div>
+    <p>Hasil `target` dan `currentTarget` ada di console.</p>
+
+    <script src="event.js"></script>
+</body>
+</html>
